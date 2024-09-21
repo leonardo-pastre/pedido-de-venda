@@ -1,0 +1,28 @@
+unit PDV.DAO.Produto;
+
+interface
+
+uses
+  Data.DB;
+
+type
+  IProdutoDAO = interface
+    function PesquisarProdutoPorCodigo(ACodigo: Integer): TDataSet;
+  end;
+
+  TProdutoDAODatabase = class(TInterfacedObject, IProdutoDAO)
+  public
+    function PesquisarProdutoPorCodigo(ACodigo: Integer): TDataSet;
+  end;
+
+implementation
+
+{ TProdutoDAODatabase }
+
+function TProdutoDAODatabase.PesquisarProdutoPorCodigo(
+  ACodigo: Integer): TDataSet;
+begin
+
+end;
+
+end.

@@ -1,0 +1,50 @@
+unit PDV.Service.PedidoService;
+
+interface
+
+uses
+  Data.DB,
+  PDV.DAO.Pedido;
+
+type
+  TPedidoService = class
+  private
+    FPedidoDAO: IPedidoDAO;
+  public
+    constructor Create(APedidoDAO: IPedidoDAO);
+    function CancelarPedido(ANumeroPedido: Integer): Boolean;
+    function GravarPedido(ADadosPedido: TDadosPedido): Boolean;
+    function PesquisarPedidoPorNumeroPedido(ANumeroPedido: Integer): TDadosPedido;
+  end;
+
+implementation
+
+{ TPedidoService }
+
+function TPedidoService.CancelarPedido(ANumeroPedido: Integer): Boolean;
+begin
+
+end;
+
+constructor TPedidoService.Create(APedidoDAO: IPedidoDAO);
+begin
+  FPedidoDAO := APedidoDAO;
+end;
+
+function TPedidoService.GravarPedido(ADadosPedido: TDadosPedido): Boolean;
+begin
+
+end;
+
+function TPedidoService.PesquisarPedidoPorNumeroPedido(
+  ANumeroPedido: Integer): TDadosPedido;
+var
+  LDataSet: TDataSet;
+begin
+  LDataSet := FPedidoDAO.PesquisarPedidoPorNumeroPedido(ANumeroPedido);
+
+  if LDataSet.IsEmpty then
+    Exit(nil);
+end;
+
+end.

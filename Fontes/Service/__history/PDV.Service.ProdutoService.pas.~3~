@@ -1,0 +1,27 @@
+unit PDV.Service.ProdutoService;
+
+interface
+
+uses
+  Data.DB,
+  PDV.DAO.Produto;
+
+type
+  TDadosProduto =  class
+  public
+    Codigo: Integer;
+    Descricao: string;
+    PrecoVenda: Double;
+  end;
+
+  TProdutoService = class
+  private
+    FProdutoDAO: IProdutoDAO;
+  public
+    constructor Create(AProdutoDAO: IProdutoDAO);
+    function PesquisarProdutoPorCodigo(ACodigo: Integer): TDadosProduto;
+  end;
+
+implementation
+
+end.

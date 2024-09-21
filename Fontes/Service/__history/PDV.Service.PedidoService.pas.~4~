@@ -1,0 +1,19 @@
+unit PDV.Service.PedidoService;
+
+interface
+
+uses
+  Data.DB,
+  PDV.DAO.Pedido;
+
+type
+  TPedidoService = class
+  public
+    function CancelarPedido(ANumeroPedido: Integer): Boolean;
+    function GravarPedido(ADadosPedido: TDadosPedido): Boolean;
+    function PesquisarPedidoPorNumeroPedido(ANumeroPedido: Integer): TDataSet;
+  end;
+
+implementation
+
+end.

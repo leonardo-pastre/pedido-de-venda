@@ -1,0 +1,35 @@
+unit PDV.DAO.Produto;
+
+interface
+
+uses
+  Data.DB,
+  PDV.DAO.Conexao.FiredacConnection;
+
+type
+  IProdutoDAO = interface
+    function PesquisarProdutoPorCodigo(ACodigo: Integer): TDataSet;
+  end;
+
+  TProdutoDAODatabase = class(TInterfacedObject, IProdutoDAO)
+  public
+    constructor Create(AConexao: IFiredacConnection);
+    function PesquisarProdutoPorCodigo(ACodigo: Integer): TDataSet;
+  end;
+
+implementation
+
+{ TProdutoDAODatabase }
+
+constructor TProdutoDAODatabase.Create(AConexao: IFiredacConnection);
+begin
+
+end;
+
+function TProdutoDAODatabase.PesquisarProdutoPorCodigo(
+  ACodigo: Integer): TDataSet;
+begin
+
+end;
+
+end.

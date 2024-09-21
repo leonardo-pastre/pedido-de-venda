@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/09/16 21:53:05.000.911,=C:\Users\DELL\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/09/17 12:02:00.000.519,C:\Users\DELL\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\DELL\Desktop\PDV\Principal.dfm</Transaction>
+    <Transaction>2024/09/17 12:02:00.000.519,C:\Users\DELL\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\DELL\Desktop\PDV\Principal.pas</Transaction>
+    <Transaction>2024/09/17 12:02:05.000.807,C:\Users\DELL\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\DELL\Desktop\PDV\PDV.dproj</Transaction>
+    <Transaction>2024/09/20 14:38:31.000.911,C:\Users\DELL\Desktop\Desafio WK\PDV\Principal.pas=C:\Users\DELL\Desktop\Desafio WK\PDV\Fontes\View\PDV.View.Principal.pas</Transaction>
+    <Transaction>2024/09/20 14:38:31.000.911,C:\Users\DELL\Desktop\Desafio WK\PDV\Principal.dfm=C:\Users\DELL\Desktop\Desafio WK\PDV\Fontes\View\PDV.View.Principal.dfm</Transaction>
+    <Transaction>2024/09/20 14:39:50.000.785,=C:\Users\DELL\Desktop\Desafio WK\PDV\Unit1.pas</Transaction>
+    <Transaction>2024/09/20 14:40:38.000.418,C:\Users\DELL\Desktop\Desafio WK\PDV\Unit1.pas=C:\Users\DELL\Desktop\Desafio WK\PDV\Fontes\Service\PDV.Service.ProdutoService.pas</Transaction>
+    <Transaction>2024/09/20 14:40:46.000.243,=C:\Users\DELL\Desktop\Desafio WK\PDV\Unit1.pas</Transaction>
+    <Transaction>2024/09/20 14:41:04.000.611,C:\Users\DELL\Desktop\Desafio WK\PDV\Unit1.pas=C:\Users\DELL\Desktop\Desafio WK\PDV\Fontes\Service\PDV.Service.ClienteService.pas</Transaction>
+    <Transaction>2024/09/20 14:41:09.000.074,=C:\Users\DELL\Desktop\Desafio WK\PDV\Unit1.pas</Transaction>
+    <Transaction>2024/09/20 14:41:21.000.745,C:\Users\DELL\Desktop\Desafio WK\PDV\Unit1.pas=C:\Users\DELL\Desktop\Desafio WK\PDV\Fontes\Service\PDV.Service.PedidoService.pas</Transaction>
+    <Transaction>2024/09/20 14:49:36.000.710,=C:\Users\DELL\Desktop\Desafio WK\PDV\Unit1.pas</Transaction>
+    <Transaction>2024/09/20 14:50:10.000.332,C:\Users\DELL\Desktop\Desafio WK\PDV\Unit1.pas=C:\Users\DELL\Desktop\Desafio WK\PDV\Fontes\DAO\PDV.DAO.Cliente.pas</Transaction>
+    <Transaction>2024/09/20 14:59:09.000.141,=C:\Users\DELL\Desktop\Desafio WK\PDV\Unit1.pas</Transaction>
+    <Transaction>2024/09/20 14:59:24.000.344,C:\Users\DELL\Desktop\Desafio WK\PDV\Unit1.pas=C:\Users\DELL\Desktop\Desafio WK\PDV\Fontes\DAO\PDV.DAO.Produto.pas</Transaction>
+    <Transaction>2024/09/20 15:17:49.000.052,=C:\Users\DELL\Desktop\Desafio WK\PDV\Unit1.pas</Transaction>
+    <Transaction>2024/09/20 15:18:39.000.438,C:\Users\DELL\Desktop\Desafio WK\PDV\Unit1.pas=C:\Users\DELL\Desktop\Desafio WK\PDV\Fontes\DAO\Conexao\PDV.DAO.Conexao.FiredacConnection.pas</Transaction>
+    <Transaction>2024/09/20 16:06:10.000.241,=C:\Users\DELL\Desktop\Desafio WK\PDV\Unit1.pas</Transaction>
+    <Transaction>2024/09/20 16:06:34.000.585,C:\Users\DELL\Desktop\Desafio WK\PDV\Unit1.pas=C:\Users\DELL\Desktop\Desafio WK\PDV\Fontes\DAO\PDV.DAO.Pedido.pas</Transaction>
+  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Fontes"/>
+    <File Path="Fontes\DAO"/>
+    <File Path="Fontes\DAO\Conexao"/>
+    <File Path="Fontes\DAO\Conexao\PDV.DAO.Conexao.FiredacConnection.pas"/>
+    <File Path="Fontes\DAO\PDV.DAO.Cliente.pas"/>
+    <File Path="Fontes\DAO\PDV.DAO.Pedido.pas"/>
+    <File Path="Fontes\DAO\PDV.DAO.Produto.pas"/>
+    <File Path="Fontes\Service"/>
+    <File Path="Fontes\Service\PDV.Service.ClienteService.pas"/>
+    <File Path="Fontes\Service\PDV.Service.PedidoService.pas"/>
+    <File Path="Fontes\Service\PDV.Service.ProdutoService.pas"/>
+    <File Path="Fontes\View"/>
+    <File Path="Fontes\View\PDV.View.Principal.pas"/>
+    <File Path="Fontes\View\PDV.View.Principal.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

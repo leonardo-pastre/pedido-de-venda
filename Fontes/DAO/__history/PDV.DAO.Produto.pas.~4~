@@ -1,0 +1,49 @@
+unit PDV.DAO.Produto;
+
+interface
+
+uses
+  Data.DB,
+  PDV.DAO.Conexao.FiredacConnection;
+
+type
+  IProdutoDAO = interface
+    function PesquisarProdutoPorCodigo(ACodigo: Integer): TDataSet;
+  end;
+
+  TProdutoDAODatabase = class(TInterfacedObject, IProdutoDAO)
+  private
+    FConexao: IFiredacConnection;
+  public
+    constructor Create(AConexao: IFiredacConnection);
+    function PesquisarProdutoPorCodigo(ACodigo: Integer): TDataSet;
+  end;
+
+implementation
+
+{ TProdutoDAODatabase }
+
+constructor TProdutoDAODatabase.Create(AConexao: IFiredacConnection);
+begin
+  FConexao := AConexao;
+end;
+
+function TProdutoDAODatabase.PesquisarProdutoPorCodigo(
+  ACodigo: Integer): TDataSet;
+begin
+  FConexao.Query.Close;
+  FConexao.Query.SQL.Clear;
+  FConexao.Query.SQL.Add('SELECT');
+  FConexao.Query.SQL.Add('  CODIGO,');
+  FConexao.Query.SQL.Add('  DESCRICAO,');
+  FConexao.Query.SQL.Add('  PRECO_VENDA');
+  FConexao.Query.SQL.Add('FROM');
+  FConexao.Query.SQL.Add('  PRODUTOS');
+  FConexao.Query.SQL.Add('WHERE');
+  FConexao.Query.SQL.Add('  CODIGO = :CODIGO;');
+  FConexao.Query.Params.ParamByName('CODIGO').AsInteger := StrToInt(EdtCodigoProduto.Text);
+  FConexao.Query.Open;
+  Result := FConexao.Query;
+end;
+
+end.

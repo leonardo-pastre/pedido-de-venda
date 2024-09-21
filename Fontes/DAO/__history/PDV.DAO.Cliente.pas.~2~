@@ -1,0 +1,28 @@
+unit PDV.DAO.Cliente;
+
+interface
+
+uses
+  Data.DB;
+
+type
+  IClienteDAO = interface
+    function PesquisarClientePorCodigo(ACodigo: Integer): TDataSet;
+  end;
+
+  TClienteDAODatabase = class(TInterfacedObject, IClienteDAO)
+  public
+    function PesquisarClientePorCodigo(ACodigo: Integer): TDataSet;
+  end;
+
+implementation
+
+{ TClienteDAODatabase }
+
+function TClienteDAODatabase.PesquisarClientePorCodigo(
+  ACodigo: Integer): TDataSet;
+begin
+
+end;
+
+end.

@@ -1,0 +1,22 @@
+program PDV;
+
+uses
+  Vcl.Forms,
+  PDV.View.Principal in 'Fontes\View\PDV.View.Principal.pas' {Principal},
+  PDV.Service.ProdutoService in 'Fontes\Service\PDV.Service.ProdutoService.pas',
+  PDV.Service.ClienteService in 'Fontes\Service\PDV.Service.ClienteService.pas',
+  PDV.Service.PedidoService in 'Fontes\Service\PDV.Service.PedidoService.pas',
+  PDV.DAO.Cliente in 'Fontes\DAO\PDV.DAO.Cliente.pas',
+  PDV.DAO.Produto in 'Fontes\DAO\PDV.DAO.Produto.pas',
+  PDV.DAO.Conexao.FiredacConnection in 'Fontes\DAO\Conexao\PDV.DAO.Conexao.FiredacConnection.pas',
+  PDV.DAO.Pedido in 'Fontes\DAO\PDV.DAO.Pedido.pas';
+
+{$R *.res}
+
+begin
+  //ReportMemoryLeaksOnShutdown := True;
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TPrincipal, Principal);
+  Application.Run;
+end.

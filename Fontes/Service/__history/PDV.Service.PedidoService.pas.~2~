@@ -1,0 +1,12 @@
+unit PDV.Service.PedidoService;
+
+interface
+
+type
+  TPedidoService = class
+  public
+  end;
+
+implementation
+
+end.
